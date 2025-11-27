@@ -12,6 +12,6 @@
 
 body {
   font-family: var(--font-primary);
-  background-color: #f8f8f8;
-  color: #111111;
+  background-color: #000; /* full dark mode */
+  color: #fff; /* optional but recommended */
 }
