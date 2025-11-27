@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { motion, type Variants } from "framer-motion";
@@ -79,8 +77,11 @@ const Hero: React.FC = () => {
 
         <motion.div
           variants={gradientVariants}
-          className="absolute inset-0 bg-black/30 bg-gradient-to-b 
-          from-[rgba(0,0,0,0.8)] via-[rgba(0,0,0,0.7)] to-black"
+          className="absolute inset-0 z-10
+             bg-gradient-to-b
+             from-[rgba(0,0,0,0.8)]
+             via-[rgba(0,0,0,0.9)]
+             to-black"
         />
       </motion.div>
 
@@ -113,8 +114,6 @@ const Hero: React.FC = () => {
           Men in Tech
         </motion.p>
       </motion.div>
-
-      {/* MAIN CONTENT */}
       <motion.div
         variants={containerVariants}
         initial="hidden"
