@@ -6,12 +6,25 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Mainlux";
+  src: url("/assest/fonts/mainLux/MainluxLight-DOAJx.otf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("/assest/fonts/static/WorkSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
 :root {
   --font-primary: "Inter", sans-serif;
 }
 
 body {
   font-family: var(--font-primary);
-  background-color: #000; /* full dark mode */
-  color: #fff; /* optional but recommended */
+  background-color: #000;
+  color: #fff;
 }
