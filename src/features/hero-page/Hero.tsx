@@ -39,6 +39,23 @@ const buttonVariants: Variants = {
   tap: { scale: 0.95 },
 };
 
+const buttonDefaultVariants: Variants = {
+  hidden: { scale: 0.9, opacity: 0 },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: { duration: 0.6, ease: "backOut" },
+  },
+  hover: {
+    scale: 1.05,
+    backgroundColor: "#FFFFFF00",
+    color: "#FFFFFF",
+    borderColor: "#FFFFFF33",
+    transition: { duration: 0.3, ease: "easeInOut" },
+  },
+  tap: { scale: 0.95 },
+};
+
 const imageVariants: Variants = {
   hidden: { scale: 1.1, opacity: 0 },
   visible: {
@@ -78,7 +95,7 @@ const Hero: React.FC = () => {
         <motion.div
           variants={gradientVariants}
           className="absolute inset-0 z-10
-             bg-gradient-to-b
+             bg-linear-to-b
              from-[rgba(0,0,0,0.8)]
              via-[rgba(0,0,0,0.9)]
              to-black"
@@ -101,7 +118,7 @@ const Hero: React.FC = () => {
             alt="MIT Logo"
             width={65}
             height={65}
-            className="object-contain w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] lg:w-[65px] lg:h-[65px]"
+            className="object-contain w-12 h-12 sm:w-14 sm:h-14 lg:w-[65px] lg:h-[65px]"
           />
         </motion.div>
 
@@ -109,7 +126,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="text-[16.32px] hidden lg:flex text-white font-bold tracking-[0.07px] leading-[32.33px]"
+          className=" font-[Inter] text-[16.32px] hidden lg:flex text-white font-bold tracking-[0.07px] leading-[32.33px]"
         >
           Men in Tech
         </motion.p>
@@ -122,8 +139,8 @@ const Hero: React.FC = () => {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-white lg:text-[110.91px] text-[40px] tracking-[-0.5px] 
-          lg:tracking-[-2.77px] font-semibold leading-[48px] lg:leading-[120px] max-w-[100%] lg:max-w-[900px]"
+          className="text-white lg:text-[110.91px] text-[40px] tracking-[-0.5px] font-[Inter] 
+          lg:tracking-[-2.77px] font-semibold leading-12 lg:leading-[120px] max-w-full lg:max-w-[900px]"
         >
           <span className="lg:hidden">
             Empowering
@@ -140,26 +157,31 @@ const Hero: React.FC = () => {
         </motion.h1>
         <motion.p
           variants={itemVariants}
-          className="text-white/60 mt-6 lg:max-w-[763px] text-[18px] 
-          lg:text-[20px] leading-[24px] lg:leading-[27.73px] tracking-[0.05px] max-w-[100%]"
+          className="text-white/60 mt-6 lg:max-w-[763px] text-[18px] font-[Inter] 
+          lg:text-[20px] leading-6 lg:leading-[27.73px] tracking-[0.05px] max-w-full"
         >
+          {/* <span className="lg:hidden">
+            We are aglobal nonprofit
+            <br />
+            dedicated to suppporting, empowering, and advancing men
+            <br />
+            in the technology ecosystme
+          </span> */}
           <span className="lg:hidden">
-            A global community for men in
+            We are a global nonprofit dedicated to
             <br />
-            technology—driving responsible
+            supporting, empowering, and advancing
             <br />
-            innovation, leadership, mental resilience,
-            <br />
-            and career excellence.
+            men in the technology ecosystem.
           </span>
           <span className="hidden lg:inline">
-            A global community for men in technology—driving responsible
-            innovation, leadership, mental resilience, and career excellence.
+            We are a global nonprofit organization dedicated to supporting ,
+            empowering, and advancing men in the technology ecosystem.
           </span>
         </motion.p>
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 mt-12 lg:mt-14 w-full max-w-[100%]  lg:max-w-none justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 mt-12 lg:mt-14 w-full max-w-full  lg:max-w-none justify-center items-center"
         >
           <motion.a
             href="https://menintech.slack.com/join/shared_invite/zt-3jleqexhu-mzfJaOhBXiZe~tx1KFnIQg#/shared-invite/email"
@@ -170,14 +192,14 @@ const Hero: React.FC = () => {
             className="w-full sm:w-auto"
           >
             <motion.button
-              variants={buttonVariants}
+              variants={buttonDefaultVariants}
               initial="hidden"
               animate="visible"
               whileHover="hover"
               whileTap="tap"
-              className="group flex w-full items-center justify-center gap-[6px] 
+              className="group flex w-full items-center justify-center gap-1.5 
               px-6 py-4 lg:py-3 text-[16px] lg:text-[14px] leading-[20.8px] tracking-[-0.27px] 
-              rounded-full text-white border border-white/20 bg-transparent sm:w-[208px]"
+              rounded-full text-[#000000] border border-[#00BC7D] bg-[#00BC7D] sm:w-52"
             >
               Join the Community
               <motion.div
