@@ -157,28 +157,24 @@ const Hero: React.FC = () => {
         </motion.h1>
         <motion.p
           variants={itemVariants}
-          className="text-white/60 mt-6 lg:max-w-[763px] text-[18px] font-[Inter] 
-          lg:text-[20px] leading-6 lg:leading-[27.73px] tracking-[0.05px] max-w-full"
+          className="text-[#FFFFFF99] mt-6 max-w-full lg:max-w-[763px] text-[16px] font-[Inter] 
+          lg:text-[20px] leading-6 lg:leading-[27.73px] tracking-[0.05px]"
         >
-          {/* <span className="lg:hidden">
-            We are aglobal nonprofit
-            <br />
-            dedicated to suppporting, empowering, and advancing men
-            <br />
-            in the technology ecosystme
-          </span> */}
           <span className="lg:hidden">
-            We are a global nonprofit dedicated to
+            A global community for men in
             <br />
-            supporting, empowering, and advancing
+            technology— driving responsible
             <br />
-            men in the technology ecosystem.
+            innovation and leadership with mental resilience,
+            <br />
+            and career excellence.
           </span>
           <span className="hidden lg:inline">
-            We are a global nonprofit organization dedicated to supporting ,
-            empowering, and advancing men in the technology ecosystem.
+            A global community for men in technology—driving responsible
+            innovation, leadership, mental resilience, and career excellence.
           </span>
         </motion.p>
+
         <motion.div
           variants={itemVariants}
           className="flex flex-col sm:flex-row gap-4 mt-12 lg:mt-14 w-full max-w-full  lg:max-w-none justify-center items-center"
