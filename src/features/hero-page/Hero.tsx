@@ -163,9 +163,9 @@ const Hero: React.FC = () => {
           <span className="lg:hidden">
             A global community for men in
             <br />
-            technology— driving responsible
+            technology— driving responsible innovation and
             <br />
-            innovation and leadership with mental resilience,
+            leadership with mental resilience,
             <br />
             and career excellence.
           </span>
@@ -194,7 +194,7 @@ const Hero: React.FC = () => {
               whileHover="hover"
               whileTap="tap"
               className="group flex w-full items-center justify-center gap-1.5 
-              px-6 py-4 lg:py-3 text-[16px] lg:text-[14px] leading-[20.8px] tracking-[-0.27px] 
+              px-6 py-4 lg:py-3 text-[16px] md:text-[14px] leading-[20.8px] tracking-[-0.27px] 
               rounded-full text-[#000000] border border-[#00BC7D] bg-[#00BC7D] sm:w-52"
             >
               Join the Community
